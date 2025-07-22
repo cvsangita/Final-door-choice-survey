@@ -19,8 +19,9 @@ def get_gsheet():
 def load_design():
     return pd.read_csv("optimized_design.csv")
 
-def load_pre_rendered_image(D2D_value):
-    path = f"door_images/door_d2d_{D2D_value}.png"
+def load_question_image(question_number, door_option):
+    filename = f"CS{question_number}{door_option}.png"
+    path = f"question_images/{filename}"
     return Image.open(path)
 
 # Session State Initialization
@@ -235,8 +236,9 @@ elif st.session_state.page == 'survey':
     question = questions.iloc[idx]
     st.markdown(f"### Question {idx+1} of {total_questions}: Which door do you choose?")
 
-    image_A = load_pre_rendered_image(question['A_D2D'])
-    image_B = load_pre_rendered_image(question['B_D2D'])
+    question_number = idx + 1
+    image_A = load_question_image(question_number, 'A')
+    image_B = load_question_image(question_number, 'B')
 
     col1, col2 = st.columns(2)
     with col1:
