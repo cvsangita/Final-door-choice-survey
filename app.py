@@ -21,8 +21,7 @@ def load_design():
 
 def load_question_image(question_number, door_option):
     filename = f"CS{question_number}{door_option}.png"
-    path = f"question_images/{filename}"
-    return Image.open(path)
+    return Image.open(filename)
 
 # Session State Initialization
 if 'page' not in st.session_state:
