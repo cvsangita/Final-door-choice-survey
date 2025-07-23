@@ -23,8 +23,8 @@ Streamlit App
 Data Collected
 - 12 discrete choice tasks per participant
 - Attributes include:
-    Distance to door (D2D)
-    Obstacle presence (O)
-    Crowding at door (CD), on platform (CP)
-    Transfer time and requirement
+    - Distance to door (D2D)
+    - Obstacle presence (O)
+    - Crowding at door (CD), on platform (CP)
+    - Transfer time and requirement
 - Demographic factors: age, gender, mobility, travel frequency
