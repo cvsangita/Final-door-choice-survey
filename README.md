@@ -8,13 +8,13 @@ Uneven passenger distribution across train doors contributes to congestion and i
 
 Key research objectives:
 
-Design a realistic Discrete Choice Experiment (DCE) incorporating spatial, crowding, and contextual factors.
+Design a realistic Discrete Choice Experiment (DCE) incorporating spatial, crowding, and contextual factors. (Choice Set.ipynb)
 
 Generate dynamic, visually realistic platform images programmatically.
 
 Deploy an interactive Streamlit survey application with Google Sheets integration.
 
-Estimate a Multinomial Logit (MNL) model to analyze passenger preferences.
+Estimate a Multinomial Logit (MNL) model to analyze passenger preferences. (MNL model.ipynb)
 
 Provide insights for operational interventions such as signage, real-time crowding information, and incentive schemes.
 
