@@ -1,30 +1,33 @@
-# Streamlit-App-Door-Choice-Survey
-# Latest-streamlit-app
+# Predicting Passenger’s Vehicle Door Choice in Subway Transportation
 
-Predicting Passenger Door Choice in Subway Transportation
-This project aims to simulate and analyze how passengers choose between subway train doors based on various attributes like distance, crowding, and accessibility. By using a Stated Choice Experiment (SCE) built in Streamlit, the goal is to gather behavioral insights that can help reduce dwell times and optimize boarding strategies in public transit systems.
+This project investigates the factors influencing subway passengers’ choice of vehicle doors during boarding, with the aim of reducing station dwell times and improving passenger distribution. By combining Discrete Choice Experiments (DCEs), dynamic image generation, and a Streamlit-based survey application, the study provides a robust framework for analyzing boarding behavior in urban rail systems.
 
-Project Objectives
-- Build a choice-based web survey using Streamlit
-- Collect user responses on door selection tasks
-- Integrate data collection with Google Sheets
-- Analyze how factors like mobility, obstacles, and transfer requirements influence decision-making
-- Draw insights to inform better transit design or simulation models
+📌 Project Overview
 
+Uneven passenger distribution across train doors contributes to congestion and increased dwell times in metro systems. This project uses a stated preference survey with dynamically generated visual scenarios to model passenger choices at the door level.
 
-Streamlit App
-- Multi-page layout (demographics → comprehension → 12 choice tasks)
-- Visual comparison of Door A vs. Door B with varying attributes
-- Google Sheets integration to store:
-  - Door choice responses
-  - Demographic data
-  - Comprehension checks
+Key research objectives:
 
-Data Collected
-- 12 discrete choice tasks per participant
-- Attributes include:
-    - Distance to door (D2D)
-    - Obstacle presence (O)
-    - Crowding at door (CD), on platform (CP)
-    - Transfer time and requirement
-- Demographic factors: age, gender, mobility, travel frequency
+Design a realistic Discrete Choice Experiment (DCE) incorporating spatial, crowding, and contextual factors.
+
+Generate dynamic, visually realistic platform images programmatically.
+
+Deploy an interactive Streamlit survey application with Google Sheets integration.
+
+Estimate a Multinomial Logit (MNL) model to analyze passenger preferences.
+
+Provide insights for operational interventions such as signage, real-time crowding information, and incentive schemes.
+
+🛠️ Tech Stack
+
+Python – data processing, modeling, image generation
+
+Pillow (PIL fork) – programmatic image creation and compositing
+
+Streamlit – interactive web-based survey interface
+
+Google Sheets API – real-time data storage
+
+Jupyter Notebooks – prototyping and development
+
+Choicedesign / Biogene – choice modeling and estimation
