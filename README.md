@@ -10,7 +10,7 @@ Key research objectives:
 
 Design a realistic Discrete Choice Experiment (DCE) incorporating spatial, crowding, and contextual factors. (Choice Set.ipynb , optimized_design.csv)
 
-Generate dynamic, visually realistic platform images programmatically.
+Generate dynamic, visually realistic platform images programmatically. (png files)
 
 Deploy an interactive Streamlit survey application with Google Sheets integration. (app.py)
 
